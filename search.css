@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cfe2f3;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#book {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#search_books {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#search_input {
+    padding: 1em;
+    border-radius: 10px;
+    text-align: left;
+    width: 80%;
+    max-width: 300px;
+    font-size: medium;
+    margin-bottom: 1em;
+}
+
+#search_button {
+    padding: 1em 2em;
+    background-color: #7bbdf7;
+    border-radius: 10px;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+}
+
+#loading {
+    display: none;
+    text-align: center;
+    margin: 2em auto;
+}
+
+#loading img {
+    width: 30px;
+    height: 30px;
+}
+
+#message {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 2em;
+    line-height: 2;
+}
+
+#message a {
+    text-decoration: none;
+    background-color: #03aed2;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+#results {
+    margin: 2em auto;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.result_books {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result_books h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.result_books img {
+    display: block;
+    margin: 0 auto 0.5em;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.result_books p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+.result_books a {
+    display: inline-block;
+    background-color: #03aed2;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.result_books a:hover {
+    background-color: #3a8ee6;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    #search_input {
+        width: 75%;
+        max-width: none;
+    }
+}
