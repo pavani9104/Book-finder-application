@@ -35,7 +35,7 @@ function display(data) {
     image.style.display="none";
     msg.innerHTML=`
     <p>Here are the results for your search!</p>
-    <a href="search.html">Go back to Search</a>
+    <a href="index.html">Go back to Search</a>
         `;
     if (data.items.length === 0) {
         result.innerHTML = "<p>No Results Found</p>";
